@@ -1,0 +1,1 @@
+ALTER TABLE account ADD password VARCHAR(255) NOT NULL;
