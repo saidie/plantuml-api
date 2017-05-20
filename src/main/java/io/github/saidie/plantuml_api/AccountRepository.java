@@ -1,9 +1,8 @@
 package io.github.saidie.plantuml_api;
 
-import org.springframework.data.repository.PagingAndSortingRepository;
-import org.springframework.data.rest.core.annotation.RepositoryRestResource;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
-@RepositoryRestResource
-public interface AccountRepository extends PagingAndSortingRepository<Account, Long> {
-    public Account findByUsername(String username);
+@Repository
+public interface AccountRepository extends CrudRepository<Account, Long> {
 }
