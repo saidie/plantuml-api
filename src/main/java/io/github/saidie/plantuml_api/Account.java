@@ -21,8 +21,4 @@ public class Account {
     @NotNull
     @Column(nullable = false)
     private String username;
-
-    @NotNull
-    @Column(nullable = false)
-    private String password;
 }
