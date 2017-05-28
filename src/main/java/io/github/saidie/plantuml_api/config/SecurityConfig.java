@@ -11,8 +11,10 @@ import org.springframework.social.security.SpringSocialConfigurer;
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests().antMatchers("/**").permitAll().and()
-            .apply(new SpringSocialConfigurer())
-            ;
+        http.authorizeRequests()
+                .antMatchers("/signin").permitAll()
+                .antMatchers("/signup").permitAll()
+                .antMatchers("/**").authenticated().and()
+            .apply(new SpringSocialConfigurer());
     }
 }
