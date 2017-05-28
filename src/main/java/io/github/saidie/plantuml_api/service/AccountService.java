@@ -1,7 +1,9 @@
-package io.github.saidie.plantuml_api;
+package io.github.saidie.plantuml_api.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import io.github.saidie.plantuml_api.model.Account;
+import io.github.saidie.plantuml_api.repository.AccountRepository;
 
 @Service
 public class AccountService {

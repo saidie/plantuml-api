@@ -1,4 +1,4 @@
-package io.github.saidie.plantuml_api;
+package io.github.saidie.plantuml_api.controller;
 
 import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +13,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.context.request.WebRequest;
+import io.github.saidie.plantuml_api.model.Account;
+import io.github.saidie.plantuml_api.service.AccountService;
 
 @Controller
 @RequestMapping("/")

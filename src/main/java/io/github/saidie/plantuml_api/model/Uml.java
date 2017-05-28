@@ -1,4 +1,4 @@
-package io.github.saidie.plantuml_api;
+package io.github.saidie.plantuml_api.model;
 
 import javax.persistence.Basic;
 import javax.persistence.Column;

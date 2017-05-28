@@ -1,4 +1,4 @@
-package io.github.saidie.plantuml_api;
+package io.github.saidie.plantuml_api.service;
 
 import java.util.ArrayList;
 import org.springframework.social.security.SocialUser;
